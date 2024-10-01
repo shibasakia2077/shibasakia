@@ -19,7 +19,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             width: 500px;
-            height: 530px;
+            height: 620px;
         }
         .registration-form h2 {
             text-align: center;
@@ -34,18 +34,18 @@
         .registration-form button {
             width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            background-color: rgb(0, 242, 56);
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
         .registration-form button:hover {
-            background-color: #218838;
+            background-color: hsl(133, 83%, 63%);
         }
     </style>
 </head>
-<body>
+<body background="pic/bg1.png">
 
     
         
@@ -66,7 +66,8 @@
 
            
             <label for="sodienthoai">Số điện thoại</label><br>
-            <input type="number" id="sodienthoai" name="sodienthoai" placeholder="Số điện thoại của bạn" required><br>
+            <input type="number" id="sodienthoai" name="sodienthoai" placeholder="Số điện thoại của bạn" required><button>nhận mã xác nhận</button><br>
+            <input type="number" id="maxacnhan" name="maxacnhan" placeholder="nhập mã xác nhận"><br>
             
             <label for="gioitinh">Giới tính:</label>
             <input type="radio" name="gioitinh" value="Nam">Nam
