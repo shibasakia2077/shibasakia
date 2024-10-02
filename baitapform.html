@@ -10,7 +10,7 @@
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             height: 100vh;
         }
         .registration-form {
@@ -22,7 +22,7 @@
             height: 620px;
         }
         .registration-form h2 {
-            text-align: center;
+            text-align: left;
             margin-bottom: 50px;
         }
         .registration-form input {
@@ -32,7 +32,7 @@
             border-radius: 4px;
         }
         .registration-form button {
-            width: 100%;
+            width: 55%;
             padding: 10px;
             background-color: rgb(0, 242, 56);
             color: white;
@@ -43,53 +43,72 @@
         .registration-form button:hover {
             background-color: hsl(133, 83%, 63%);
         }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
     </style>
 </head>
-<body background="pic/bg1.png">
-
-    
-        
-
+<body>
+<table>
+    <th><img scr="pic/33ra.png" alt=""></th>
+    <th>
     <div class="registration-form" >
         <fieldset>
             <legend>Đăng kí</legend>
-        <form action="/submit_form" method="POST">
+        <form action="" method="">
             <label for="name">Họ và tên:</label><br>  
             <input type="text" id="name" name="name" placeholder="Họ và tên đệm của bạn" required>
-            <input type="text" id="name" name="name" placeholder="Tên của bạn" required><br>
-
+            <input type="text" id="name" name="name" placeholder="Tên của bạn" required>
+            <br>
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Email của bạn" required><br>
-
+            <input type="email" id="email" name="email" placeholder="Email của bạn" required>
+            <br>
             <label for="password">Mật khẩu:</label><br>
-            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required><br>
-
-           
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+            <br>
             <label for="sodienthoai">Số điện thoại</label><br>
-            <input type="number" id="sodienthoai" name="sodienthoai" placeholder="Số điện thoại của bạn" required><button>nhận mã xác nhận</button><br>
-            <input type="number" id="maxacnhan" name="maxacnhan" placeholder="nhập mã xác nhận"><br>
-            
+            <input type="number" id="sodienthoai" name="sodienthoai" placeholder="Số điện thoại của bạn" required>
+            <input type="number" id="maxacnhan" name="maxacnhan" placeholder="nhập mã xác nhận"><button>nhận mã xác nhận</button>
+            <br>
             <label for="gioitinh">Giới tính:</label>
             <input type="radio" name="gioitinh" value="Nam">Nam
             <input type="radio" name="gioitinh" value="Nu">Nữ
             <input type="radio" name="gioitinh" value="khac">Khác
             <br>
+            <label for="tinhthanh">Tỉnh thành:</label>
+                <select id="tinhthanh" name="tinhthanh" size="1">
+                    <option value="sg">TP Hồ Chí Minh</option>
+                    <option value="hn">Hà Nội</option>
+                    <option value="hue">Thừa Thiên Huế</option>
+                    <option value="qn">Quảng Nam</option>
+                </select>
             <br>
-
-            <label for="birthday">ngày/tháng/năm sinh</label><br>
+            <br>
+            <label for="birthday">ngày/tháng/năm sinh</label>
+            <br>
             <input type="date" id="birthday" name="birthday" value="">
-
-            
-            
-          
+            <br>
             <button type="reset">Làm mới</button>
             <br>
             <br>
             <button type="submit">Đăng kí</button>
         </form>
         </fieldset>
+        <header><a href="hanhtrinh.html">quay lại trang trước</a></header>
     </div>
-  
+</th>
+</table>
+
+
 
 </body>
 </html>
